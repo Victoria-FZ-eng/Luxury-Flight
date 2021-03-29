@@ -1,14 +1,17 @@
 var userName = prompt("What is your name?")
-alert(userName +', Welcome to Luxury Flight airline services')
+function welcomingMsg(userName){
+alert(userName +', Welcome to Luxury Flight airline services')}
+welcomingMsg (userName);
 var client = prompt("Have you tried our services?", "Yes, No")
 while (client !== "Yes" && client !== "No" ){ 
     client = prompt("Please answer" , "Yes, No")
 }
+
 if (client == "Yes"){
-    prompt("What was your favorite trip?")
+   var trip = prompt("What was your favorite trip?", "Maldives, Istanbul, Greece ")
 }
 else {
-    var trip = prompt("Where do you prefere visiting?", "Maldives, Istanbul, Greece ")
+     trip = prompt("Where do you prefere visiting?", "Maldives, Istanbul, Greece ")
 }
 while (trip !== "Maldives" && trip !== "Istanbul" && trip !== "Greece" ){ 
     trip = prompt("Please answer" , "Maldives, Istanbul, Greece")
@@ -33,9 +36,19 @@ var noTickets = prompt("How many tickets?")
 for (var i =1 ; i <= noTickets ; i++){
     shimg = shimg + img  
 };
+document.write(shimg);
+
+function priceDollar (noTickets) {
+    var money = 315 * noTickets;
+    alert("Cost is" + money);
+}
+priceDollar(noTickets)
+
+
+
 
 confirm ("Sorry that took you so long ! xP ")
 
-document.write(shimg);
+
 
 

@@ -1,0 +1,15 @@
+header h1 {
+background-color: rgba(96, 199, 224);
+color: Black;
+text-align: center;
+margin: 4px;
+border: 1px;
+padding: 4px;
+}
+header nav ul li {
+display:inline;
+text-decoration:none;
+
+;
+
+}
